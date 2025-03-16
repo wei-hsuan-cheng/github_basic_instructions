@@ -1,5 +1,4 @@
 # GitHub: create/push/commit repositories
----
 
 ### 1. Ensure Git is installed
 
