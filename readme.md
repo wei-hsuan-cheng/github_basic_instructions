@@ -82,7 +82,35 @@ git push -u origin main
 git push -u origin master
 ```
 
-### 7. Useful commands
+* Restoring to last commit
+```bash
+git status
+git clean -fd
+```
+
+### Submodule management
+
+* After editting `.gitmodules`
+```bash
+git submodule sync # or git submodule sync submodules/<submodule_name> for one submodule
+git add .gitmodules
+git commit -m "Update submodule configuration"
+git push
+git submodule update --init --recursive
+```
+
+### Branch management
+
+```bash
+git submodule sync # or git submodule sync submodules/<submodule_name> for one submodule
+git add .gitmodules
+git commit -m "Update submodule configuration"
+git push
+git submodule update --init --recursive
+```
+
+
+### Useful commands
 
 ```bash
 # Sometimes if things just don't work, use this and you can push again
