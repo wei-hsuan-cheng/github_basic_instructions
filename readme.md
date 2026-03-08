@@ -38,6 +38,9 @@ Open a terminal and navigate to the root of your directory (for example, the `<g
 ```bash
 cd <your_path>/<github_repo_name>  # adjust path as needed
 git init && git add . && git commit -m "Initial commit"
+
+# If branch name is not "main"
+git branch -m main
 ```
 
 ### 4. Create a new GitHub repository using GitHub CLI
