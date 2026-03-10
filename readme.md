@@ -89,10 +89,10 @@ git clean -fd
 
 * Add `submodules`
 ```bash
-git submodule add https://github.com/wei-hsuan-cheng/<repo_name>.git submodules/<repo_name>
+git submodule add https://github.com/wei-hsuan-cheng/<github_repo_name>.git submodules/<github_repo_name>
 git submodule update --init --recursive
-git add .gitmodules submodules/<repo_name>
-git commit -m "Add <repo_name> submodules"
+git add .gitmodules submodules/<github_repo_name>
+git commit -m "Add <github_repo_name> submodules"
 ```
 
 ### Useful commands
