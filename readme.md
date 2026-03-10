@@ -38,7 +38,6 @@ Open a terminal and navigate to the root of your directory (for example, the `<g
 ```bash
 cd <your_path>/<github_repo_name>  # adjust path as needed
 git init && git add . && git commit -m "Initial commit"
-
 # If branch name is not "main"
 git branch -m main
 ```
@@ -89,9 +88,9 @@ git clean -fd
 
 * Add `submodules`
 ```bash
-git submodule add https://github.com/wei-hsuan-cheng/<github_repo_name>.git submodules/<github_repo_name>
+git submodule add https://github.com/wei-hsuan-cheng/<github_repo_name>.git <submodule_dir>/<github_repo_name>
 git submodule update --init --recursive
-git add .gitmodules submodules/<github_repo_name>
+git add .gitmodules <submodule_dir>/<github_repo_name>
 git commit -m "Add <github_repo_name> submodules"
 git push -u origin main
 ```
@@ -101,7 +100,6 @@ git push -u origin main
 ```bash
 # Sometimes if things just don't work, use this and you can push again
 git pull --rebase origin main
-git pull --rebase origin master
 
 # Remove Git setting
 rm -rf .git
