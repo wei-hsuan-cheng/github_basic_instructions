@@ -93,6 +93,7 @@ git submodule add https://github.com/wei-hsuan-cheng/<github_repo_name>.git subm
 git submodule update --init --recursive
 git add .gitmodules submodules/<github_repo_name>
 git commit -m "Add <github_repo_name> submodules"
+git push -u origin main
 ```
 
 ### Useful commands
