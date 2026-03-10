@@ -59,15 +59,10 @@ This command does the following:
 
 ### 5. Push your code to GitHub
 
-Finally, push your commit to the new remote repository. Depending on your default branch name (*e.g.* `main` or `master`), run:
+Finally, push your commit to the new remote repository. Depending on your default branch name (*e.g.* `main`), run:
 
 ```bash
-# Check the existing branches
-git branch
-
-# Depending on the branch name (main or master, etc.)
 git push -u origin main
-git push -u origin master
 ```
 
 Your project is now pushed to GitHub!
@@ -80,9 +75,8 @@ First navigate to the root of your directory, stage the changes, commit, and pus
 cd <your_path>/<github_repo_name>  # adjust path as needed
 git add . && git commit -m "commit_message" # stage and commit the changes
 
-# Depending on the branch name (main or master, etc.)
+# Depending on the branch name (main, etc.)
 git push -u origin main
-git push -u origin master
 ```
 
 * Restoring to last commit
@@ -93,25 +87,13 @@ git clean -fd
 
 ### Submodule management
 
-* After editting `.gitmodules`
+* Add `submodules`
 ```bash
-git submodule sync # or git submodule sync submodules/<submodule_name> for one submodule
-git add .gitmodules
-git commit -m "Update submodule configuration"
-git push
+git submodule add https://github.com/wei-hsuan-cheng/<repo_name>.git submodules/<repo_name>
 git submodule update --init --recursive
+git add .gitmodules submodules/<repo_name>
+git commit -m "Add <repo_name> submodules"
 ```
-
-### Branch management
-
-```bash
-git submodule sync # or git submodule sync submodules/<submodule_name> for one submodule
-git add .gitmodules
-git commit -m "Update submodule configuration"
-git push
-git submodule update --init --recursive
-```
-
 
 ### Useful commands
 
