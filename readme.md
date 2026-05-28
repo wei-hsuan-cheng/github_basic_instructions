@@ -84,7 +84,21 @@ git status
 git clean -fd
 ```
 
-### Submodule management
+### 7. Merge branches
+
+* Merge `branch_1` into `branch_2`
+```bash
+git branch # check if it's currently in branch_2
+
+git fetch origin
+git merge origin/branch_1 # Merge branch_1 into branch_2
+
+git status
+git branch --show-current
+git remote -v
+```
+
+### 8. Submodule management
 
 * Add `submodules`
 ```bash
